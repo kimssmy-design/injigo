@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>2027 한국인공지능고등학교 입학 안내</title>
+  <meta name="description" content="2027년 3월 화천에 문을 여는 한국인공지능고등학교의 학교 소개, 모집 전형, 일정, 제출 서류를 한눈에 정리했습니다.">
+  <meta property="og:title" content="2027 한국인공지능고등학교 입학 안내">
+  <meta property="og:description" content="학교 소개 · 모집 전형 · 일정 · 원서 양식을 한곳에서 확인하세요.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ① 히어로 -->
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
+        <p class="hero-kicker">2027학년도 신입생 모집 안내</p>
+        <h1><span>미래를 선도하는</span>한국인공지능고등학교</h1>
+        <p class="hero-old">(구)화천정보산업고등학교</p>
+        <div class="dday" id="dday" aria-live="polite"></div>
+      </div>
+      <dl class="hero-facts">
+        <div><dt>개교일</dt><dd>2027년 3월 1일</dd></div>
+        <div><dt>위치</dt><dd>강원특별자치도 화천군 화천읍</dd></div>
+        <div><dt>모집</dt><dd>AI사물인터넷학과 2학급 32명, 전국 모집</dd></div>
+        <div><dt>설립목적</dt><dd>디지털 대전환 시대를 이끌 인공지능 융합형 영마이스터 양성</dd></div>
+        <div><dt>전형료</dt><dd>없음</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <!-- 상단 메뉴 -->
+  <nav class="nav" aria-label="바로가기">
+    <div class="nav-inner">
+      <a href="#video">홍보영상</a>
+      <a href="#about">학교 소개</a>
+      <a href="#admission">모집 전형</a>
+      <a href="#schedule">일정</a>
+      <a href="#method">전형 방법</a>
+      <a href="#documents">서류·양식</a>
+      <a href="#notice">꼭 알아둘 점</a>
+      <a href="#news">관련 기사</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ② 홍보영상 -->
+    <section class="sec" id="video">
+      <div class="wrap">
+        <h2>홍보영상</h2>
+        <div id="video-box"></div>
+      </div>
+    </section>
+
+    <!-- ③ 학교 소개 -->
+    <section class="sec sec-tint" id="about">
+      <div class="wrap">
+        <h2>학교 소개</h2>
+        <p class="lead" id="vision">“인간 중심의 인공지능 교육으로 세계를 무대로 활약할 창의 인재를 양성합니다.”</p>
+
+        <h3 class="sub">키우고 싶은 인재</h3>
+        <ul class="talents" id="talents"></ul>
+
+        <h3 class="sub">올인원 지원 시스템</h3>
+        <p class="sub-desc">학부모님의 경제적 부담은 줄이고, 학생의 학습 몰입도는 높입니다.</p>
+        <div class="support" id="support"></div>
+
+        <h3 class="sub">학년별 교육과정</h3>
+        <ol class="roadmap" id="roadmap"></ol>
+
+        <h3 class="sub">졸업 후 진로</h3>
+        <div class="careers" id="careers"></div>
+
+        <button type="button" class="btn-line" id="open-leaflet">학교 리플릿 원본 크게 보기</button>
+      </div>
+    </section>
+
+    <!-- ④ 모집 전형 -->
+    <section class="sec" id="admission">
+      <div class="wrap">
+        <h2>모집 전형</h2>
+        <div id="quota"></div>
+        <div class="tracks" id="tracks"></div>
+
+        <div class="finder-box">
+          <h3 class="sub">나에게 맞는 전형 찾기</h3>
+          <div id="finder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ 일정 -->
+    <section class="sec sec-tint" id="schedule">
+      <div class="wrap">
+        <h2>전형 일정</h2>
+        <p class="sub-desc">오늘 날짜를 기준으로 지난 일정은 흐리게, 다음 일정은 강조해서 보여줍니다.</p>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ⑥ 전형 방법 -->
+    <section class="sec" id="method">
+      <div class="wrap">
+        <h2>전형 방법</h2>
+        <details class="fold">
+          <summary>점수 배점과 선발 방법 펼쳐 보기</summary>
+          <div class="fold-body" id="scoring"></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ⑦ 서류·양식 -->
+    <section class="sec sec-tint" id="documents">
+      <div class="wrap">
+        <h2>제출 서류 체크리스트</h2>
+        <p class="sub-desc">지원할 전형을 고르면 필요한 서류만 보여줘요. 하나씩 체크하며 준비하세요.</p>
+        <div id="docs"></div>
+
+        <h3 class="sub">원서 양식 내려받기</h3>
+        <div class="downloads" id="downloads"></div>
+        <p class="small">한글(HWP) 프로그램으로 열 수 있어요. 휴대폰에서는 ‘한컴오피스 Viewer’ 앱으로 볼 수 있어요.</p>
+
+        <h3 class="sub">미리 내지 않는 서식</h3>
+        <ul class="later" id="later"></ul>
+      </div>
+    </section>
+
+    <!-- ⑧ 꼭 알아둘 점 -->
+    <section class="sec" id="notice">
+      <div class="wrap">
+        <h2>꼭 알아둘 점</h2>
+        <div class="notices" id="notices"></div>
+      </div>
+    </section>
+
+    <!-- ⑨ 관련 기사·링크 -->
+    <section class="sec sec-tint" id="news">
+      <div class="wrap">
+        <h2>관련 기사</h2>
+        <ul class="news" id="news-list"></ul>
+        <h3 class="sub">함께 보면 좋은 링크</h3>
+        <ul class="links" id="links"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ⑩ 문의 -->
+  <footer class="foot">
+    <div class="wrap">
+      <h2>궁금한 점은 학교로 문의하세요</h2>
+      <div id="contact"></div>
+      <p class="small foot-note">이 페이지는 한국인공지능고등학교 입학전형요강(2026. 7.)과 학교 리플릿을 바탕으로 정리한 안내 자료입니다. 원문과 다른 부분이 있으면 입학전형요강 원문과 학교 안내가 우선합니다.</p>
+    </div>
+  </footer>
+
+  <!-- 리플릿 크게 보기 -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="학교 리플릿 원본">
+    <div class="lightbox-bar">
+      <span>좌우로 밀어서 볼 수 있어요</span>
+      <a href="assets/leaflet.jpg" target="_blank" rel="noopener">새 창에서 열기</a>
+      <button type="button" data-close>닫기</button>
+    </div>
+    <div class="lightbox-scroll">
+      <img src="assets/leaflet.jpg" alt="한국인공지능고등학교 리플릿 내지면: 학교 소개, 올인원 지원 시스템, 학년별 교육과정, 졸업 후 진로" width="2350" height="1239" loading="lazy">
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/finder.js"></script>
+  <script src="js/docs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
