@@ -272,6 +272,17 @@ a { color: var(--blue-deep); }
 .score-bar span:first-child { background: var(--navy); color: #fff; }
 .score-bar b { font-size: 20px; }
 
+.alert-red {
+  margin: 0 0 20px; padding: 20px 22px;
+  background: #FFF1F1; border: 2.5px solid #D93636; border-radius: var(--radius-lg);
+}
+.alert-red h3 { margin: 0 0 10px; font-size: 19px; color: #B42323; letter-spacing: -0.02em; }
+.alert-red ul { margin: 0; padding-left: 1.2em; }
+.alert-red li { margin: 6px 0; line-height: 1.65; }
+.alert-red strong { color: #B42323; }
+.alert-red u { text-decoration-color: #D93636; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.alert-note { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+
 /* ---------- 서류 ---------- */
 .doc-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .doc-tab {
