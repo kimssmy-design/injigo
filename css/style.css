@@ -106,6 +106,15 @@ a { color: var(--blue-deep); }
 }
 .nav a:hover { color: var(--ink); }
 .nav a.is-on { color: var(--navy); border-bottom-color: var(--blue); }
+.nav a.nav-exam { color: var(--navy); }
+.exam-cta {
+  display: grid; gap: 4px; margin-top: 16px; padding: 18px 22px;
+  background: var(--navy); color: #fff; text-decoration: none;
+  border-radius: var(--radius-lg); border-left: 6px solid var(--gold);
+}
+.exam-cta strong { font-size: 18px; }
+.exam-cta span { font-size: 15px; opacity: .9; }
+.exam-cta:hover { background: var(--blue-deep); }
 
 /* ---------- 섹션 공통 ---------- */
 .sec { padding: 64px 0; }

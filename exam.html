@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>특별전형 시험 준비 · 한국인공지능고등학교 입학 안내</title>
+  <meta name="description" content="기초학력 진단검사 기출문제로 국어·수학·영어 기초 실력을 점검해 보세요. 바로 채점됩니다.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/exam.css">
+</head>
+<body>
+
+  <header class="exam-hero">
+    <div class="wrap">
+      <a class="back" href="index.html">← 입학 안내로 돌아가기</a>
+      <h1>특별전형 시험 준비</h1>
+      <p>기초학력 진단검사 기출문제로 국어·수학·영어 기초 실력을 점검해 보세요. 보기를 누르면 바로 채점돼요.</p>
+      <ul class="exam-notes">
+        <li>특별전형 2차의 <b>국·수·영 기초 학업 역량 평가</b>(국 72 · 수 96 · 영 72점) 대비용이에요.</li>
+        <li>중2 기초학력 진단검사는 <b>중1 내용</b>을 다뤄요. 실제 평가는 중2~3 범위이니 기초 점검용으로 활용하세요.</li>
+        <li>영어 1~10번은 듣기 문항이라 빼고 11~30번만 실었어요.</li>
+        <li>풀이 기록과 시간은 <b>지금 쓰는 기기에만</b> 저장돼요.</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="wrap exam" id="exam">
+    <div id="exam-top"></div>
+
+    <div class="pickers">
+      <div class="tabs" id="year-tabs" aria-label="연도 선택"></div>
+      <div class="tabs" id="subj-tabs" aria-label="과목 선택"></div>
+    </div>
+
+    <div class="status" id="status" aria-live="polite"></div>
+
+    <div class="qlist" id="qlist"></div>
+
+    <section class="result" id="result" aria-live="polite"></section>
+  </main>
+
+  <button type="button" class="to-top" id="to-top" aria-label="맨 위로" hidden>↑<span>맨 위로</span></button>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p><a href="index.html">← 입학 안내로 돌아가기</a></p>
+      <p class="small foot-note">문항 출처: 2025·2026학년도 기초학력 진단검사 중학교 2학년 G형 (개발 및 보급: 교육부, 17개 시도교육청, 충남대학교 응용교육측정·평가연구소). 정답과 평가요소는 내용분류표를 따랐습니다.</p>
+    </div>
+  </footer>
+
+  <script src="js/exam-data.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+</html>

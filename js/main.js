@@ -145,7 +145,7 @@
 
   /* ---------- 상단 메뉴: 현재 위치 표시 ---------- */
   function initNav() {
-    var links = document.querySelectorAll('.nav a');
+    var links = document.querySelectorAll('.nav a[href^="#"]');
     if (!('IntersectionObserver' in window)) return;
     var map = {};
     for (var i = 0; i < links.length; i++) map[links[i].getAttribute('href').slice(1)] = links[i];
